@@ -35,22 +35,22 @@ function generatePassword() {
     alert("Choice needs to be number.")
     return null;
   }
-  // Created prompt for window for 1st password event.
+  // Created prompt for lower case.
   var lowerCaseOption = window.confirm("Would you like to include lower case letters?");
   if (lowerCaseOption) {
     passwordOptions += lowerCase;
   }
-  //upper
+  // Created prompt for upper case.
   var upperCaseOption = window.confirm("Would you like to include upper case letters?");
   if (upperCaseOption) {
     passwordOptions += upperCase;
   }
-  //numb
+  // Created prompt for numbers.
   var numbersOptions = window.confirm("Would you like to include numbers?");
   if (numbersOptions) {
     passwordOptions += numbers;
   }
-  //special
+  // Created prompt for special characters. 
   var specialCharOptions = window.confirm("Would you like to include special characters?");
   if (specialCharOptions) {
     passwordOptions += specialChar;
