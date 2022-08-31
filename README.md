@@ -14,7 +14,7 @@ This website's usage is to provide the user with a password that meets certain c
 ## Links
 
 Below is the link to the deployed website:
-https://mmuugii.github.io/###
+https://mmuugii.github.io/Password-Generator-App/
 
 ## Screenshot of Website
 
