@@ -21,7 +21,7 @@ function generatePassword() {
   passwordOptions = '';
   // Created first prompt for user input for numbers in password.
   var passwordLength = parseInt(prompt("Password must be longer than 8 characters and shorter than 128 characters."))
-  // length
+  // Created prompts for password length between 8 and 128.
   if (passwordLength < 8) {
     alert("Password needs to be at least 8 characters!");
     return null;
@@ -30,6 +30,7 @@ function generatePassword() {
     alert("Password must be shorter than 128 characters!")
     return null;
   }
+  // Created prompts for whether previous prompt was a number or letter.
   if (Number.isNaN(passwordLength)) {
     alert("Choice needs to be number.")
     return null;
