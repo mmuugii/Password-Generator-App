@@ -1,4 +1,3 @@
-// Assignment Code
 // Created variables for all acceptable characters for password.
 var lowerCase = ['abcdefghijklmnopqrstuvwxyz'];
 var upperCase =  ['ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
@@ -15,7 +14,7 @@ function writePassword() {
   passwordText.value = password;
 }
 
-// Created first prompt when Generate is Pressed.
+// Created over-arching function that deals with all of the pre-requisites for the generated password.
 function generatePassword() {
   password = '';
   passwordOptions = '';
@@ -55,7 +54,7 @@ function generatePassword() {
   if (specialCharOptions) {
     passwordOptions += specialChar;
   }
-  //random
+  // Randomizing the output given user input.
   for (var i = 0; i < passwordLength; i++) {
     var index = Math.floor(Math.random() * passwordOptions.length);
     password += passwordOptions[index];
